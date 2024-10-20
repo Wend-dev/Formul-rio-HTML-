@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required><br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masc</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Fem</label>
+        <input type="radio" id="nao-informar" name="sexo" value="nao-informar">
+        <label for="nao-informar">Prefiro não informar</label><br><br>
+
+        <label>Endereço:</label><br>
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" required><br>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" required><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br>
+
+        <label for="uf">UF:</label>
+        <select id="uf" name="uf" required>
+            <option value="DF" selected>DF</option>
+            <option value="DF" selected>ES</option>
+            <option value="DF" selected>MA</option>
+            <option value="DF" selected>MG</option>
+        </select><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
